@@ -19,10 +19,7 @@ From your browser, navigate to localhost:8787 and login with username rstudio an
 In the R console run 
 
 ```
-install.packages("devtools") # can and should add these to Dockerfile
-Sys.setenv(NOT_CRAN = "true")
-install.packages("polars", repos = "https://community.r-multiverse.org")
-devtools::install("tidypolars")
+RUN R -e "devtools::install('tidypolars', dependencies = TRUE)"
 ```
 
 And you are all set to develop!
