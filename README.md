@@ -19,7 +19,7 @@ From your browser, navigate to localhost:8787 and login with username rstudio an
 In the R console run 
 
 ```
-RUN R -e "devtools::install('tidypolars', dependencies = TRUE)"
+devtools::install('tidypolars', dependencies = TRUE)
 ```
 
 And you are all set to develop!
